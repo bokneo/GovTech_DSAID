@@ -27,3 +27,7 @@ def split_first_last(df):
 def nameless(df):
     return df.dropna(subset = ['name'])
 
+def above_100(df):
+    df['above_100'] = True
+    df.loc[df['price'] <= 100, 'above_100'] = False
+    return df
