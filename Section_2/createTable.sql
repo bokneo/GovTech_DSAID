@@ -6,7 +6,6 @@ CREATE TABLE car(
     weight NUMERIC(12,2) NOT NULL,
     price NUMERIC(12,2) NOT NULL,
     PRIMARY KEY (serialnumber, manufacturers)
-    FOREIGN KEY(id, username) REFERENCES auth_user(id, username)
 );
 
 CREATE TABLE transaction(
