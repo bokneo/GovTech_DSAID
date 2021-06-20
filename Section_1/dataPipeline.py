@@ -7,6 +7,9 @@ df1 = pd.read_csv('Dataset\dataset1.csv')
 
 df2 = pd.read_csv('Dataset\dataset2.csv')
 
+def nameless(df):
+    return df.dropna(subset = ['name'])
+
 def split_first_last(df):
     df['first_name'] = np.nan
     df['last_name'] = np.nan
@@ -18,14 +21,10 @@ def split_first_last(df):
         df.loc[i, 'last_name'] = l_name
     return df.drop('name', axis = 'columns')
         
-'''def prepended_zero(df):
+def prepended_zero(df):
     for i, row in df.iterrows():
         df.loc[i, 'price'] = float(re.sub(r'(.+)', r'\1', str(row.price)))
     return df
-'''
-
-def nameless(df):
-    return df.dropna(subset = ['name'])
 
 def above_100(df):
     df['above_100'] = True
