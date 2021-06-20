@@ -13,6 +13,9 @@ CREATE TABLE transaction(
     customer_name VARCHAR(255),
     customer_phone VARCHAR(255),
     salesperson VARCHAR(128),
-    car_characteristics TEXT,
-    FOREIGN KEY(salesperson) REFERENCES car(salesperson)
+    manufacturers VARCHAR(128) NOT NULL,
+    serialnumber VARCHAR(255) NOT NULL,
+    date_sold DATE,
+    time_sold TIMESTAMP,
+    FOREIGN KEY(serialnumber, manufacturers) REFERENCES car(serialnumber, manufacturers)
 );
