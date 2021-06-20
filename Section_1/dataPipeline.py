@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import re
 from nameparser import HumanName
 
 df1 = pd.read_csv('Dataset\dataset1.csv')
@@ -17,3 +18,12 @@ def split_first_last(df):
         df.loc[i, 'last_name'] = l_name
     return df.drop('name', axis = 'columns')
         
+'''def prepended_zero(df):
+    for i, row in df.iterrows():
+        df.loc[i, 'price'] = float(re.sub(r'(.+)', r'\1', str(row.price)))
+    return df
+'''
+
+def nameless(df):
+    return df.dropna(subset = ['name'])
+
