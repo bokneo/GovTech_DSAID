@@ -1,11 +1,11 @@
 CREATE TABLE car(
-    salesperson VARCHAR(128) NOT NULL UNIQUE,
+    salesperson VARCHAR(128) NOT NULL,
     manufacturers VARCHAR(128) NOT NULL,
     modelname VARCHAR(255) NOT NULL,
     serialnumber VARCHAR(255) NOT NULL,
     weight NUMERIC(12,2) NOT NULL,
     price NUMERIC(12,2) NOT NULL,
-    PRIMARY KEY (serialnumber, manufacturers)
+    PRIMARY KEY (salesperson, serialnumber, manufacturers)
 );
 
 CREATE TABLE transaction(
@@ -15,7 +15,6 @@ CREATE TABLE transaction(
     salesperson VARCHAR(128),
     manufacturers VARCHAR(128) NOT NULL,
     serialnumber VARCHAR(255) NOT NULL,
-    date_sold DATE,
-    time_sold TIMESTAMP,
-    FOREIGN KEY(serialnumber, manufacturers) REFERENCES car(serialnumber, manufacturers)
+    date_sold TIMESTAMP default NULL,
+    FOREIGN KEY(salesperson, serialnumber, manufacturers) REFERENCES car(salesperson, serialnumber, manufacturers)
 );
