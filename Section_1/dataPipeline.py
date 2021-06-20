@@ -30,3 +30,16 @@ def above_100(df):
     df['above_100'] = True
     df.loc[df['price'] <= 100, 'above_100'] = False
     return df
+
+data = [df1, df2]
+count = 1
+
+for i in data:
+    i = nameless(i)
+    i = split_first_last(i)
+    i = prepended_zero(i)
+    i = above_100(i)
+    i = i[['first_name', 'last_name', 'price', 'above_100']]
+    name = 'Dataset\processed_df' + str(count) + '.csv'
+    i.to_csv(name)
+    count += 1
