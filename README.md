@@ -53,32 +53,29 @@ The features that are selected in the end are: 'maint', 'lug_boot', 'safety', 'c
 
 ## Comparing performance between algorithms
 
-<p>
-Model accuracy score with decision-trees : 0.2364
-Model accuracy score with extra-trees : 0.2364
-Model accuracy score with random forest : 0.2364
-Model accuracy score with gradient boosting trees : 0.2820
-Model accuracy score with logistic regression : 0.2872
-</p>
+#### Model accuracy score with decision-trees : 0.2364
+#### Model accuracy score with extra-trees : 0.2364
+#### Model accuracy score with random forest : 0.2364
+#### Model accuracy score with gradient boosting trees : 0.2820
+#### Model accuracy score with logistic regression : 0.2872
 
 ## Performance with Neural Networks
 
-<p>
-Model: 
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-dense_40 (Dense)             (None, 3)                 15        
-_________________________________________________________________
-dense_41 (Dense)             (None, 3)                 12        
-_________________________________________________________________
-dense_42 (Dense)             (None, 3)                 12        
-_________________________________________________________________
-dense_43 (Dense)             (None, 4)                 16        
-=================================================================
-Total params: 55
-Trainable params: 55
-Non-trainable params: 0
-_________________________________________________________________
-test accuracy = 0.3169877408056042
-</p>
+#### Model: 
+#### _________________________________________________________________
+#### Layer (type)                 Output Shape              Param #   
+#### =================================================================
+#### dense_40 (Dense)             (None, 3)                 15        
+#### _________________________________________________________________
+#### dense_41 (Dense)             (None, 3)                 12        
+#### _________________________________________________________________
+#### dense_42 (Dense)             (None, 3)                 12        
+#### _________________________________________________________________
+#### dense_43 (Dense)             (None, 4)                 16        
+#### =================================================================
+#### Total params: 55
+#### Trainable params: 55
+#### Non-trainable params: 0
+#### _________________________________________________________________
+####
+#### test accuracy = 0.3169877408056042
