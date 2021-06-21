@@ -16,8 +16,7 @@ CREATE TABLE Customer(
     id SERIAL PRIMARY KEY,
     last_name VARCHAR(128),
     first_name VARCHAR(128),
-    customer_phone VARCHAR(128),
-    date_bought TIMESTAMP default NULL
+    customer_phone VARCHAR(128)
 );
 
 
@@ -26,6 +25,7 @@ CREATE TABLE Transaction(
     serialnumber VARCHAR(128) references Car(serialnumber),
     customer_id INTEGER references Customer(id),
     salesperson_id INTEGER,
+    date_bought TIMESTAMP default NULL,
     FOREIGN KEY(salesperson_id) REFERENCES Salesperson(id)
 );
 
