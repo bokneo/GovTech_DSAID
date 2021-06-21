@@ -30,3 +30,9 @@ This is done by filtering the price using the condition price > 100.
 ## The database is designed with 4 table as seen in the ER diagram below
 
 ![alt text](https://github.com/bokneo/GovTech_DSAID/blob/master/Section_2/ER%20Diagram.png?raw=true)
+
+# Section 3
+
+## The system architecture diagram:
+
+![alt text](https://github.com/bokneo/GovTech_DSAID/blob/master/Section_3/System%20Design.png?raw=true)
