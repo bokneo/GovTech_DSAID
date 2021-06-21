@@ -29,4 +29,4 @@ This is done by filtering the price using the condition price > 100.
 
 ## The database is designed with 4 table as seen in the ER diagram below
 
-![image info](Section_2\ER Diagram.png)
+![image info](./Section_2/ER Diagram.png)
