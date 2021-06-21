@@ -24,3 +24,9 @@ The data is saved as a float. Hence, it most likely will not have any prepended 
 <p>
 This is done by filtering the price using the condition price > 100.
 </p>
+
+# Section 2
+
+## The database is designed with 4 table as seen in the ER diagram below
+
+![image info](Section_2\ER Diagram.png)
