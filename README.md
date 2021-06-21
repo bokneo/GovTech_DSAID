@@ -41,6 +41,6 @@ This is done by filtering the price using the condition price > 100.
 
 ## The graph displaying the number of cases in Singapore over time using the given APIs
 
-![alt text]https://github.com/bokneo/GovTech_DSAID/blob/master/Section_4/graph_num_case_over_time.png?raw=true)
+![alt text](https://github.com/bokneo/GovTech_DSAID/blob/master/Section_4/graph_num_case_over_time.png?raw=true)
 
 # Section 5
